@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
+import Header from "./components/Header/Header";
+
 import "./App.scss";
-import "./index.scss";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Helmet>
         <title>Joowon's PortFolio</title>
       </Helmet>
-      just started
+      <Header />
     </div>
   );
 }

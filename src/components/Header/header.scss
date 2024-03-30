@@ -1,0 +1,39 @@
+@import "/src/assets/css/index.scss";
+
+.header {
+  display: flex;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  position: fixed;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+
+  .header-container {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+
+    .header-right-container {
+      display: flex;
+      width: 480px;
+      justify-content: space-between;
+      align-items: center;
+
+      .header-right-item {
+        cursor: pointer;
+      }
+      .header-right-item:hover {
+        color: $gray-200;
+      }
+    }
+  }
+
+  &.scrolled {
+    background-color: $gray-400;
+  }
+}
