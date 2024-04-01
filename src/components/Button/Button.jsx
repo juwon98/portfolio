@@ -5,7 +5,7 @@ import "./button.scss";
 
 const Button = ({ type, label, style, onClick }) => {
   return (
-    <button className={`button ${type}`}>
+    <button className={`button ${type}`} style={style}>
       {label}
       <div className="dim"></div>
     </button>
