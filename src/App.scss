@@ -3,4 +3,26 @@
 .App {
   width: 100vw;
   height: 5000px;
+
+  .main-section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    padding: 72px;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+  }
 }

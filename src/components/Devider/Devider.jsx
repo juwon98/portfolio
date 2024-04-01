@@ -7,7 +7,7 @@ const Devider = ({ style }) => {
   return <div className="devider" style={style}></div>;
 };
 
-Devider.prototype = {
+Devider.propTypes = {
   style: PropTypes.objectOf(PropTypes.string),
 };
 
