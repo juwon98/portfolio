@@ -2,27 +2,152 @@
 
 .App {
   width: 100vw;
-  height: 5000px;
+  overflow-x: hidden;
 
-  .main-section {
+  //
+  // main
+
+  .main-article {
     display: flex;
     position: relative;
     width: 100%;
-    height: 80vh;
-    padding: 72px;
-
+    height: 700px;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+
+    #main-background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.6;
+    }
+
+    .main-content {
+      display: flex;
+      width: 1200px;
+      height: 100%;
+      padding: 72px 36px 72px 36px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .main-title-wrapper {
+        margin-bottom: 24px;
+        text-align: center;
+        line-height: 40px;
+
+        .main-title {
+          font-size: 30px;
+          font-weight: 700;
+        }
+      }
+      .main-description-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
   }
 
-  .image {
-    position: absolute;
-    top: 0;
-    left: 0;
+  //
+  //
+  //
+  // about me
+
+  .aboutme-article {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.2;
+    height: fit-content;
+    background: white;
+
+    .aboutme-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+      padding: 72px 36px 72px 36px;
+
+      .aboutme-title-container {
+        .aboutme-title-wrapper {
+          display: flex;
+
+          #magnifying-glass-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 24px;
+          }
+
+          .aboutme-title {
+            font-size: 50px;
+            font-weight: 800;
+          }
+        }
+      }
+      .aboutme-infos-container {
+        display: flex;
+        justify-content: center;
+        width: 800px;
+        flex-wrap: wrap;
+
+        .aboutme-info-wrapper {
+          display: flex;
+          margin: 0px 100px 0px 100px;
+          width: 200px;
+          height: 80px;
+
+          #person-icon,
+          #calendar-icon,
+          #phone-icon,
+          #location-icon,
+          #school-icon,
+          #envelope-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 30px;
+          }
+
+          .aboutme-info {
+            .aboutme-info-title {
+              font-size: 23px;
+              font-weight: 700;
+            }
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  //
+  //
+  //
+  // skills
+
+  .skills-article {
+    width: 100%;
+    height: 70vh;
+    background: $category-surprised-basic;
+  }
+
+  .archive-article {
+    width: 100%;
+    height: 70vh;
+    background: $category-angry-basic;
+  }
+
+  .projects-article {
+    width: 100%;
+    height: 70vh;
+    background: $category-joyful-basic;
+  }
+
+  .career-article {
+    width: 100%;
+    height: 70vh;
+    background: $category-neutral-basic;
   }
 }

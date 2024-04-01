@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Bars from "../../assets/img/bars-solid.svg";
 
 import "./header.scss";
 
@@ -7,7 +8,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > window.innerHeight); // 스크롤이 100vh 이상 true
+      setScrolled(window.scrollY > 600); // 스크롤이 80vh 이상 true
     };
 
     window.addEventListener("scroll", handleScroll);
