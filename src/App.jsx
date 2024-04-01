@@ -56,7 +56,7 @@ function App() {
               />
               <h2 className="aboutme-title">About Me</h2>
             </div>
-            <Devider style={{ margin: "12px 0px 36px 0px" }} />
+            <Devider style={{ margin: "12px 0px 48px 0px" }} />
           </div>
           <div className="aboutme-infos-container">
             <div className="aboutme-info-wrapper">
