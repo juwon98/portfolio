@@ -161,22 +161,28 @@
       }
 
       .skills-detail-container {
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
-        max-width: 1200px;
-        padding: 30px;
+        width: 1200px;
+        padding: 36px 72px 36px 72px;
         background: white;
         border-radius: 16px;
         box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
+
+        @include mobile {
+          width: 100%;
+        }
 
         .skills-category-container {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
+          margin-bottom: 24px;
+
           .skills-category {
             font-size: 40px;
             font-weight: 500;
-            margin-bottom: 12px;
+            margin-bottom: 18px;
           }
         }
 
@@ -184,11 +190,10 @@
           display: flex;
           flex-wrap: wrap;
           margin-bottom: 18px;
-          height: 85px;
         }
         .skills-icon {
           height: 80px;
-          margin-right: 18px;
+          margin-right: 36px;
           border-radius: 8px;
           object-fit: cover;
         }

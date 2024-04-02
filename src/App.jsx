@@ -176,9 +176,7 @@ function App() {
                     alt="IconZustand"
                     className="skills-icon"
                     style={{
-                      marginLeft: "-18px",
-                      height: "90px",
-                      marginTop: "-5px",
+                      transform: "scale(1.1)",
                     }}
                   />
                 </li>
@@ -199,7 +197,7 @@ function App() {
                     src={IconFigma}
                     alt="IconFigma"
                     className="skills-icon"
-                    style={{ height: "120px", marginTop: "-20px" }}
+                    style={{ transform: "scale(1.2)" }}
                   />
                 </li>
               </ul>
