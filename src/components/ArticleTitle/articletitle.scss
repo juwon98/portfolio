@@ -1,0 +1,18 @@
+@import "/src/assets/css/index.scss";
+
+.article-title-container {
+  .article-title-wrapper {
+    display: flex;
+
+    .magnifying-glass-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 24px;
+    }
+
+    .article-title {
+      font-size: 50px;
+      font-weight: 800;
+    }
+  }
+}

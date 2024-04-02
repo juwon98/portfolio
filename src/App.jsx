@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 import Header from "./components/Header/Header";
-import Devider from "./components/Devider/Devider";
+import ArticleTitle from "./components/ArticleTitle/ArticleTitle";
 import Button from "./components/Button/Button";
 
 import Thanks from "./assets/img/thanks.jpeg";
@@ -9,7 +9,6 @@ import User from "./assets/img/user-solid.svg";
 import Calendar from "./assets/img/calendar-check-solid.svg";
 import Envelope from "./assets/img/envelope-solid.svg";
 import Location from "./assets/img/location-dot-solid.svg";
-import MagnifyingGlass from "./assets/img/magnifying-glass-solid.svg";
 import Phone from "./assets/img/phone-solid.svg";
 import School from "./assets/img/school-solid.svg";
 
@@ -57,18 +56,8 @@ function App() {
       </div>
 
       <article className="aboutme-article">
-        <div className="aboutme-content">
-          <div className="aboutme-title-container">
-            <div className="aboutme-title-wrapper">
-              <img
-                src={MagnifyingGlass}
-                alt="돋보기"
-                className="magnifying-glass-icon"
-              />
-              <h2 className="aboutme-title">About Me</h2>
-            </div>
-            <Devider style={{ margin: "24px 0px 48px 0px" }} />
-          </div>
+        <div className="article-content aboutme-content">
+          <ArticleTitle label="About Me" />
           <div className="aboutme-infos-container">
             <div className="aboutme-info-wrapper">
               <img src={User} alt="사람" className="aboutme-icon" />
@@ -125,19 +114,8 @@ function App() {
       </article>
 
       <article className="skills-article">
-        <div className="skills-content">
-          <div className="skills-title-container">
-            <div className="skills-title-wrapper">
-              <img
-                src={MagnifyingGlass}
-                alt="돋보기"
-                className="magnifying-glass-icon"
-              />
-              <h2 className="skills-title">Skills</h2>
-            </div>
-            <Devider style={{ margin: "24px 0px 48px 0px" }} />
-          </div>
-
+        <div className="article-content skills-content">
+          <ArticleTitle label="Skills" />
           <div className="skills-detail-container">
             <div className="skills-category-container">
               <h3 className="skills-category">Frontend</h3>
@@ -221,7 +199,11 @@ function App() {
         </div>
       </article>
 
-      <article className="archive-article"></article>
+      <article className="archive-article">
+        <div className="article-content archive-content">
+          <ArticleTitle label="Arichive" />
+        </div>
+      </article>
 
       <article className="projects-article"></article>
 
