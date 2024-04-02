@@ -22,6 +22,7 @@ import IconGit from "./assets/img/skillsIcon/icon-git.svg";
 import IconGithub from "./assets/img/skillsIcon/icon-github.svg";
 import IconNotion from "./assets/img/skillsIcon/icon-notion.svg";
 import IconFigma from "./assets/img/skillsIcon/icon-figma.svg";
+import IconVelog from "./assets/img/icon-velog.png";
 
 import "./App.scss";
 
@@ -201,13 +202,57 @@ function App() {
 
       <article className="archive-article">
         <div className="article-content archive-content">
-          <ArticleTitle label="Arichive" />
+          <ArticleTitle label="Archive" />
+
+          <div className="archive-container">
+            <div className="archive-inner-container">
+              <img src={IconGithub} alt="IconGithub" className="archive-icon" />
+              <a
+                href="https://github.com/juwon98"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="archive-link"
+              >
+                https://github.com/juwon98
+              </a>
+
+              <ul className="archive-description">
+                <li className="archive-description-item">• asdf</li>
+                <li className="archive-description-item">• asdf</li>
+                <li className="archive-description-item">• asdf</li>
+              </ul>
+            </div>
+            <div className="archive-inner-container">
+              <img src={IconVelog} alt="IconVelog" className="archive-icon" />
+              <a
+                href="https://velog.io/@juwon98/posts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="archive-link"
+              >
+                https://velog.io/@juwon98/posts
+              </a>
+              <ul className="archive-description">
+                <li className="archive-description-item">• asdf</li>
+                <li className="archive-description-item">• asdf</li>
+                <li className="archive-description-item">• asdf</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </article>
 
-      <article className="projects-article"></article>
+      <article className="projects-article">
+        <div className="article-content projects-content">
+          <ArticleTitle label="Projects" />
+        </div>
+      </article>
 
-      <article className="career-article"></article>
+      <article className="career-article">
+        <div className="article-content career-content">
+          <ArticleTitle label="Career" />
+        </div>
+      </article>
     </div>
   );
 }

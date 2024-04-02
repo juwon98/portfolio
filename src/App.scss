@@ -119,10 +119,10 @@
     .skills-content {
       :hover.skills-detail-container {
         transform: scale(1.05);
-        transition: transform 0.2s;
       }
 
       .skills-detail-container {
+        transition: transform 0.2s;
         display: inline-flex;
         flex-direction: column;
         width: 1200px;
@@ -173,18 +173,59 @@
     background: #dfdfe9;
 
     .archive-content {
+      .archive-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 72px;
+
+        :hover.archive-inner-container {
+          transform: scale(1.05);
+        }
+
+        .archive-inner-container {
+          transition: transform 0.2s;
+          display: flex;
+          width: 360px;
+          height: 360px;
+          align-items: center;
+          flex-direction: column;
+          background-color: white;
+          padding: 48px;
+          border-radius: 16px;
+          box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+
+          .archive-icon {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 18px;
+          }
+          .archive-link {
+            margin-bottom: 18px;
+          }
+
+          .archive-description {
+            width: 100%;
+
+            .archive-description-item {
+              margin-top: 12px;
+            }
+          }
+        }
+      }
     }
   }
 
   .projects-article {
     width: 100%;
-    height: 70vh;
+
     background: $category-joyful-basic;
   }
 
   .career-article {
     width: 100%;
-    height: 70vh;
-    background: $category-neutral-basic;
+
+    background: $category-sad-basic;
   }
 }
