@@ -219,8 +219,11 @@
 
   .projects-article {
     width: 100%;
-
     background: $category-joyful-basic;
+
+    .projects-item-container {
+      width: 1200px;
+    }
   }
 
   .career-article {

@@ -1,8 +1,16 @@
+import React from "react";
 import { Helmet } from "react-helmet-async";
+
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/scss";
+import "swiper/scss/navigation";
+import "swiper/scss/pagination";
 
 import Header from "./components/Header/Header";
 import ArticleTitle from "./components/ArticleTitle/ArticleTitle";
 import Button from "./components/Button/Button";
+import ProjectPortfolio from "./components/ProjectItem/ProjectPortfolio";
 
 import Thanks from "./assets/img/thanks.jpeg";
 import User from "./assets/img/user-solid.svg";
@@ -26,7 +34,7 @@ import IconVelog from "./assets/img/icon-velog.png";
 
 import "./App.scss";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Helmet>
@@ -245,6 +253,25 @@ function App() {
       <article className="projects-article">
         <div className="article-content projects-content">
           <ArticleTitle label="Projects" />
+          <div className="projects-item-container">
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={50}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+            >
+              <SwiperSlide>
+                <ProjectPortfolio />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProjectPortfolio />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProjectPortfolio />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </article>
 
@@ -255,6 +282,6 @@ function App() {
       </article>
     </div>
   );
-}
+};
 
 export default App;
