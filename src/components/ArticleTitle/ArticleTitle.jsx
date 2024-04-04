@@ -18,7 +18,7 @@ const ArticleTitle = ({ label }) => {
         />
         <h2 className="article-title">{label}</h2>
       </div>
-      <Devider style={{ margin: "24px 0px 48px 0px" }} />
+      <Devider style={{ margin: "24px 0px 60px 0px" }} />
     </div>
   );
 };
