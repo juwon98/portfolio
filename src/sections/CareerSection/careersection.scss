@@ -1,0 +1,16 @@
+@import "/src/assets/css/index.scss";
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 72px 36px 72px 36px;
+}
+
+.career-section {
+  width: 100%;
+
+  background: $category-sad-basic;
+}

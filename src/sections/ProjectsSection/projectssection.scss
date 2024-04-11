@@ -1,0 +1,19 @@
+@import "/src/assets/css/index.scss";
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 72px 36px 72px 36px;
+}
+
+.projects-section {
+  width: 100%;
+  background: $category-joyful-basic;
+
+  .projects-item-container {
+    width: 1200px;
+  }
+}
