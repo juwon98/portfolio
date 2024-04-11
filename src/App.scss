@@ -4,7 +4,7 @@
   width: 100vw;
   overflow-x: hidden;
 
-  .article-content {
+  .section-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
   //
   // main
 
-  .main-article {
+  .main-section {
     display: flex;
     position: relative;
     width: 100%;
@@ -67,7 +67,7 @@
   //
   // about me
 
-  .aboutme-article {
+  .aboutme-section {
     width: 100%;
     height: fit-content;
     background: white;
@@ -111,7 +111,7 @@
   //
   // skills
 
-  .skills-article {
+  .skills-section {
     width: 100%;
     height: fit-content;
     background: #fcfae8;
@@ -168,7 +168,7 @@
   //
   // archive
 
-  .archive-article {
+  .archive-section {
     width: 100%;
     background: #dfdfe9;
 
@@ -217,7 +217,7 @@
     }
   }
 
-  .projects-article {
+  .projects-section {
     width: 100%;
     background: $category-joyful-basic;
 
@@ -226,7 +226,7 @@
     }
   }
 
-  .career-article {
+  .career-section {
     width: 100%;
 
     background: $category-sad-basic;

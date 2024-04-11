@@ -1,7 +1,7 @@
 @import "/src/assets/css/index.scss";
 
-.article-title-container {
-  .article-title-wrapper {
+.section-title-container {
+  .section-title-wrapper {
     display: flex;
 
     .magnifying-glass-icon {
@@ -10,7 +10,7 @@
       margin-right: 24px;
     }
 
-    .article-title {
+    .section-title {
       font-size: 50px;
       font-weight: 800;
     }

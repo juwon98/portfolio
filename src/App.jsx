@@ -8,7 +8,7 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
 import Header from "./components/Header/Header";
-import ArticleTitle from "./components/ArticleTitle/ArticleTitle";
+import SectionTitle from "./components/SectionTitle/SectionsTitle";
 import Button from "./components/Button/Button";
 import ProjectPortfolio from "./components/ProjectItem/ProjectPortfolio";
 
@@ -41,7 +41,7 @@ const App = () => {
         <title>Joowon's PortFolio</title>
       </Helmet>
       <Header />
-      <div className="main-article">
+      <div className="main-section">
         <img src={Thanks} alt="배경" id="main-background-image" />
         <div className="main-content">
           <div className="main-title-wrapper">
@@ -64,9 +64,9 @@ const App = () => {
         </div>
       </div>
 
-      <article className="aboutme-article">
-        <div className="article-content aboutme-content">
-          <ArticleTitle label="About Me" />
+      <section className="aboutme-section">
+        <div className="section-content aboutme-content">
+          <SectionTitle label="About Me" />
           <div className="aboutme-infos-container">
             <div className="aboutme-info-wrapper">
               <img src={User} alt="사람" className="aboutme-icon" />
@@ -120,11 +120,11 @@ const App = () => {
             </div>
           </div>
         </div>
-      </article>
+      </section>
 
-      <article className="skills-article">
-        <div className="article-content skills-content">
-          <ArticleTitle label="Skills" />
+      <section className="skills-section">
+        <div className="section-content skills-content">
+          <SectionTitle label="Skills" />
           <div className="skills-detail-container">
             <div className="skills-category-container">
               <h3 className="skills-category">Frontend</h3>
@@ -206,11 +206,11 @@ const App = () => {
             </div>
           </div>
         </div>
-      </article>
+      </section>
 
-      <article className="archive-article">
-        <div className="article-content archive-content">
-          <ArticleTitle label="Archive" />
+      <section className="archive-section">
+        <div className="section-content archive-content">
+          <SectionTitle label="Archive" />
 
           <div className="archive-container">
             <div className="archive-inner-container">
@@ -248,11 +248,11 @@ const App = () => {
             </div>
           </div>
         </div>
-      </article>
+      </section>
 
-      <article className="projects-article">
-        <div className="article-content projects-content">
-          <ArticleTitle label="Projects" />
+      <section className="projects-section">
+        <div className="section-content projects-content">
+          <SectionTitle label="Projects" />
           <div className="projects-item-container">
             <Swiper
               modules={[Navigation, Pagination]}
@@ -273,13 +273,13 @@ const App = () => {
             </Swiper>
           </div>
         </div>
-      </article>
+      </section>
 
-      <article className="career-article">
-        <div className="article-content career-content">
-          <ArticleTitle label="Career" />
+      <section className="career-section">
+        <div className="section-content career-content">
+          <SectionTitle label="Career" />
         </div>
-      </article>
+      </section>
     </div>
   );
 };

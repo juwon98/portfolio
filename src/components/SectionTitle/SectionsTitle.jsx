@@ -5,27 +5,27 @@ import Devider from "../Devider/Devider";
 
 import MagnifyingGlass from "../../assets/img/magnifying-glass-solid.svg";
 
-import "./articletitle.scss";
+import "./sectiontitle.scss";
 
-const ArticleTitle = ({ label }) => {
+const SectionTitle = ({ label }) => {
   return (
-    <div className="article-title-container">
-      <div className="article-title-wrapper">
+    <div className="section-title-container">
+      <div className="section-title-wrapper">
         <img
           src={MagnifyingGlass}
           alt="돋보기"
           className="magnifying-glass-icon"
         />
-        <h2 className="article-title">{label}</h2>
+        <h2 className="section-title">{label}</h2>
       </div>
       <Devider style={{ margin: "24px 0px 60px 0px" }} />
     </div>
   );
 };
 
-ArticleTitle.propTypes = {
+SectionTitle.propTypes = {
   label: PropTypes.string.isRequired,
   style: PropTypes.objectOf(PropTypes.string),
 };
 
-export default ArticleTitle;
+export default SectionTitle;
